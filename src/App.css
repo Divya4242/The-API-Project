@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
 .App {
   text-align: center;
 }

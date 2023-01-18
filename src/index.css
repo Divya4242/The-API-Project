@@ -5,9 +5,65 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
+}.card .hd{font-size: 25px;font-weight: 550}.card.hover, .card:hover{box-shadow: 0 20px 40px rgba(0, 0, 0, .2)}.img{margin-bottom: 35px;-webkit-filter: drop-shadow(5px 5px 5px #222);filter: drop-shadow(5px 5px 5px #222)}.card-title{font-weight: 600}button.focus, button:focus{outline: 0;box-shadow: none !important}.ft{margin-top: 25px}.chk{margin-bottom: 5px}.rck{margin-top: 20px;padding-bottom: 15px}
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.liu{
+  display: flex;
+  justify-content: end;
+}
+.active{
+  color: #feb062;
+}
+
+#radius-shape-1 {
+  height: 220px;
+  width: 220px;
+  top: -60px;
+  left: -130px;
+  background: radial-gradient(#44006b, #ad1fff);
+  overflow: hidden;
+}
+
+#radius-shape-2 {
+  border-radius: 38% 62% 63% 37% / 70% 33% 67% 30%;
+  bottom: -60px;
+  right: -110px;
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(#44006b, #ad1fff);
+  overflow: hidden;
+}
+
+.bg-glass {
+  background-color: hsla(0, 0%, 100%, 0.9) !important;
+  backdrop-filter: saturate(200%) blur(25px);
+}
+
+.background-radial-gradient{
+  background-color: #071a52;
+  /* background-image: radial-gradient(650px circle at 0% 0%,
+      hsl(215,100%, 35%) 15%,
+      hsl(215,100%, 30%) 35%,
+      hsl(215,100%, 20%) 75%,
+      hsl(215,100%, 19%) 80%,
+      transparent 100%),
+    radial-gradient(1250px circle at 100% 100%,
+      hsl(215,100%, 45%) 15%,
+      hsl(215,100%, 30%) 35%,
+      hsl(215,100%, 20%) 75%,
+      hsl(215,100%, 19%) 80%,
+      transparent 100%); */
+}
+
+.dropdown{
+  border-radius: 10px;
+  cursor: pointer
+}
+.dropdown .dropdown-list{
+  border-radius: 10px;
+}
+
