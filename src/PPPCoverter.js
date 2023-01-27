@@ -128,9 +128,9 @@ function PPPConverter() {
                                     </Accordion.Body>
                                 </Accordion.Item>
                             </Accordion> <br /> <br />
-                            <span style={{ color: "#6c757d" }}><center>All data is provided by the wonderful people at <a rel="noreferrer" href="https://www.worldbank.org/en/home" target="_blank">The World Bank</a> </center></span>
                             <br /> <br />
                         </div>
+                        <span style={{ color: "#6c757d" }}><center>All data is provided by the wonderful people at <a rel="noreferrer" href="https://www.worldbank.org/en/home" target="_blank">The World Bank</a> </center></span>
                     </div>
                     <h6 style={{ color: "#1f4287", justifyContent: "center", position: "relative", display: "flex" }}>© 2023 Divya Patel. All Rights Reserved</h6>
                 </div>

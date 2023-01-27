@@ -6,6 +6,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Typography from '@mui/material/Typography';
 import { styled } from '@mui/material/styles';
 import Drawer from '@mui/material/Drawer';
+import { AppBar } from "@mui/material";
 import MuiAppBar from '@mui/material/AppBar';
 import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
@@ -16,26 +17,7 @@ import { useLocation } from "react-router-dom";
 import { NavLink, useNavigate } from 'react-router-dom';
 import './appbar.css';
 
-
-const AppBar = styled(MuiAppBar, {
-    shouldForwardProp: (prop) => prop !== 'open',
-})(({ theme, open }) => ({
-    zIndex: theme.zIndex.drawer + 1,
-    transition: theme.transitions.create(['width', 'margin'], {
-        easing: theme.transitions.easing.sharp,
-        duration: theme.transitions.duration.leavingScreen,
-    }),
-    ...(open && {
-        marginLeft: drawerWidth,
-        width: `calc(100% - ${drawerWidth}px)`,
-        transition: theme.transitions.create(['width', 'margin'], {
-            easing: theme.transitions.easing.sharp,
-            duration: theme.transitions.duration.enteringScreen,
-        }),
-    }),
-}));
 const drawerWidth = 240;
-
 
 function Navbar(props) {
     const location = useLocation();
@@ -51,7 +33,7 @@ function Navbar(props) {
     let navItems = ['PPP', 'ForEX', 'Weather'];
 
     const drawer = (
-        <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
+        <Box onClick={() => { handleDrawerToggle() }} sx={{ textAlign: 'center' }}>
             <Typography variant="h6" sx={{ my: 2 }}>
                 The API Project
             </Typography>
@@ -70,20 +52,21 @@ function Navbar(props) {
     return (
         <Box sx={{ flexGrow: 1 }}>
             <AppBar position="fixed" style={{ backgroundColor: "#071e3d" }} >
-                <Toolbar onClick={() => { handleDrawerToggle() }}>
+                <Toolbar >
                     <IconButton
                         color="inherit"
                         aria-label="open drawer"
                         edge="start"
-                        onClick={() => { navigate(`/`) }}
+                        onClick={() => { navigate(`/`); handleDrawerToggle(); }}
                         style={{ cursor: "pointer" }}
                         sx={{ mr: 2, display: { sm: 'none' } }}
                     >
                         <MenuIcon />
-                        <Typography variant="h6" sx={{ ml: 1 }}>
-                            The API Project
-                        </Typography>
                     </IconButton>
+                    <Typography variant="h6" sx={{ ml: 1, mr: 2, display: { sm: 'none' } }}>
+                        The API Project
+                    </Typography>
+
                     <Typography
                         variant="h6"
                         component="div"
