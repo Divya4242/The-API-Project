@@ -119,7 +119,7 @@ function PPPConverter() {
                                     <Accordion.Body>
                                         The foreign exchange rate tells you that a salary of 80,000 Euros can be converted into 100,000 US Dollars.
                                         What it doesn't tell you is if 100,000 USD in America can get you the same standard of living as 80,000 Euros does in France.
-                                        How much money would you need in America to buy the same things that you would buy in France? <br /> <br />
+                                        How much money you would need to buy the same goods and luxury as you would in France. <br /> <br />
 
                                         This is where <a rel="noreferrer" target="_blank" href="https://en.wikipedia.org/wiki/Purchasing_power_parity"> Purchasing Power Parity (PPP)</a> comes in. Converting your salary using PPP,
                                         instead of the exchange rate, helps to give you a better approximation of what your standard of
