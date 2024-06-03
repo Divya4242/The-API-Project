@@ -2,7 +2,7 @@
 
 The project consists of three APIs. PPP, ForEx and Weather Api
 
-https://divyaapis.azurewebsites.net
+https://apiproject.devopswithdivya.me/
 
 ## About APIs
 
